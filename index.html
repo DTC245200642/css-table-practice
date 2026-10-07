@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Định kiểu bảng với CSS</title>
+    <style>
+        /* Thiết lập giao diện tổng quan trang */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        /* Thiết lập chiều rộng và gộp đường viền bảng */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Định kiểu đường viền và khoảng cách đệm (padding) cho th và td */
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: left; /* Căn lề trái theo chiều ngang */
+        }
+
+        /* Định kiểu màu nền, màu chữ và chiều cao cho hàng tiêu đề th */
+        th {
+            background-color: #333;
+            color: white;
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        /* Định kiểu màu nền và màu chữ cho các ô dữ liệu td */
+        td {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Danh sách học viên</h1>
+        <table>
+            <tr>
+                <th>Họ tên</th>
+                <th>Tuổi</th>
+                <th>Lớp</th>
+            </tr>
+            <tr>
+                <td>Nguyễn Văn A</td>
+                <td>20</td>
+                <td>Web</td>
+            </tr>
+            <tr>
+                <td>Trần Thị B</td>
+                <td>21</td>
+                <td>Web</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
